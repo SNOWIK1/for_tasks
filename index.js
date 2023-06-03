@@ -65,7 +65,7 @@ bot.command('news', ctx => {
 
   const keyword = ctx.message.text.replace("/news", '')
 
-  axios.get(`https://newsapi.org/v2/everything?language=${lang}&q=${keyword}&sortBy=popularity&pageSize=${pageSize}&domains=google.com&apiKey=14a0aa304dbc42db90fd770b2b3a8e31`)
+  axios.get(`https://newsapi.org/v2/everything?language=${lang}&q=${keyword}&sortBy=popularity&pageSize=${pageSize}&domains=google.com&apiKey=`)
     .then(response => {
       const articles = response.data.articles
       const arr = articles.map(item => {
