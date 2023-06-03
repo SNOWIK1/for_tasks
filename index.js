@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require('sequelize')
 const axios = require('axios')
 const {DateTime} = require('luxon')
 
-const bot = new Telegraf('5891318186:AAFCjsPZveqnw78w_3EHfu95J-MZVeDJM_8')
+const bot = new Telegraf('TOKEN')
 
 // Create an instance of Sequelize and define the database connection
 const sequelize = new Sequelize('database', 'username', 'password', {
